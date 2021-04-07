@@ -6,4 +6,7 @@ node('gradle') {
             "mvn"
             )
     }
+    stage('maven build') {
+        sh 'sh \'mvn -B -DskipTests clean package\''
+        }
 }
