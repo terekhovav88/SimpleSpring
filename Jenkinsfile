@@ -9,6 +9,7 @@ node('gradle') {
     stage('checkout') {
             gitCheckout(
             branch: "master",
+            cred: "f8413abe-394d-4162-98d5-842a7e37942d",
             url: "https://github.com/terekhovav88/SimpleSpring.git"
         )
     }
