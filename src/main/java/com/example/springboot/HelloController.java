@@ -32,7 +32,7 @@ public class HelloController {
 
     @RequestMapping(value = "/time")
     public String showTime() {
-        String now = LocalTime.now();
+        var now = LocalTime.now();
         return String.format("%s", now.toString());
     }
 }
