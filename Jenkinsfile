@@ -9,7 +9,7 @@ node('gradle') {
     stage('maven build') {
         withMaven() {
            git "https://github.com/terekhovav88/SimpleSpring.git"
-           sh "./mvnw clean deploy" // 'mvnw' command (e.g. "./mvnw deploy")
+           sh "mvn clean deploy" // 'mvnw' command (e.g. "./mvnw deploy")
         }
     }
 }
