@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,9 +29,9 @@ public class HelloController {
                 .body(list);
     }
 
-    @RequestMapping(value = "/time")
-    public String showTime() {
-        var now = LocalTime.now();
-        return String.format("%s", now.toString());
-    }
+//    @RequestMapping(value = "/time")
+//    public String showTime() {
+//        var now = LocalTime.now();
+//        return String.format("%s", now.toString());
+//    }
 }
